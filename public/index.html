@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+    Name: Rachel Shi
+    CS 132 Spring 2023
+    Date: June 3rd, 2023
+    This is the index.html page for my website, called Acorn, that sells keyboard accessories, 
+    3D prints, and other knicknacks. Although for now, it sells pictures of dogs. I wanted 
+    to auto generate squirrel photos from a squirrel API, but sadly I could not find one.
+    I am hoping to build a squirrel API in the future.
+    It will include links to stuff that is on sale and projects I am undertaking.
+    Sources: 
+      Inspired by Koala Case Study: 
+      https://eipsum.github.io/cs132/lectures/case-studies/koala-case-study/koala.html
+      Inspired by Coffee Shop Case Study:
+      https://eipsum.github.io/cs132/lectures/lec05-css-iii-more-layout/code/coffee-shop-solution/index.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="product.css">
+  <!-- Regular and Bold Roboto Mono Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Regular and Bold Roboto Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Favicon for tab/title area -->
+  <link rel="icon" href="./imgs/acorn-logo-2.png">
+  <!-- Scripts -->
+  <script src="utils.js"></script>
+  <script defer src="index.js"></script>
+  <title>Acorn</title>
+</head>
+<body>
+  <header>
+    <nav id="top-nav">
+      <!-- referred to MDN example code -->
+      <select id="product-type">
+        <option value="All" selected>All</option>
+        <option value="Full Keyboards">Full Keyboards</option>
+        <option value="90% Keyboards">90% Keyboards</option>
+        <option value="80% Keyboards">80% Keyboards</option>
+        <option value="65% Keyboards">65% Keyboards</option>
+        <option value="60% Keyboards">60% Keyboards</option>
+        <option value="Kits">Keyboard Kits</option>
+        <option value="Keychains">Keychains</option>
+      </select>
+      <input id="search" type="text" name="Search" placeholder="Search All">
+      <a href="./login.html">login</a>
+      <a href="./cart.html">cart</a>
+    </nav>
+    <nav>
+      <ul>
+        <li>
+          <!-- Source: Logo Drawn by Rachel Shi -->
+          <a href="./index.html"><img id="nav-bar-logo" 
+            src="./imgs/acorn-logo-2.png" 
+            alt="Logo for Acorn Website">Acorn</a>
+        </li>
+        <li><a href="./index.html">Keycaps</a></li>
+        <li><a href="./full-keyboards.html">Full Keyboards</a></li>
+        <li><a href="./index.html">Kits</a></li>
+        <li><a href="./index.html">3D Puzzles</a></li>
+        <li><a href="./index.html">Keychains</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="main-view">
+      <!-- Initial Welcome and Advertisement Section -->
+      <section id="welcome">
+        <div id="welcome-text">
+          <h1>Welcome to Acorn Mechanical Keyboards!</h1>
+          <a href="./full-keyboards.html">Checkout full keyboards here</a>
+          <a href="./sign-up.html">Sign Up to Join Our Rewards Program!</a>
+        </div>
+      </section>
+      <!-- New/Popular Products Section -->
+      <section id="new-products-section">
+        <header>
+          <h2>Our Latest Selection</h2>
+        </header>
+        <div id="new-products">
+        </div>
+      </section>
+      <!-- All Products Section - lists every single product, infinity scroll? -->
+      <section id="all-products-section">
+        <header>
+          <h2>All Products</h2>
+        </header>
+        <div id="all-products">
+        </div>
+      </section>
+    </section>
+    <section id="product-view" class="hidden">
+      <section id="product-info">
+        <div>
+          <h1>Odin 75 Mechanical Keyboard</h1>
+          <img src="imgs/odin_75_720x.jpg" alt="Photograph of Odin 75 Mechanical Keyboard in Black">
+          <p>Description: Fully built odin 75 mechanical keyboard</p>
+          <p>Color: Black</p>
+        </div>
+        <aside>
+          <h4>Odin 75 Mechanical Keyboard in Black</h4>
+          <p>Price: $129.99 (USD)</p>
+          <button id="add-to-cart">Add to Cart</button>
+        </aside>
+      </section>
+      <section id="reviews">
+        <header>
+          <h2>Reviews</h2>
+          <hr>
+        </header>
+        <section id="customer-reviews">
+          <button id="get-reviews">Get Reviews</button>
+        </section>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <a href="./contact-us.html">Contact Us</a>
+    <p>Instagram Page:&nbsp;<a href="https://www.instagram.com/acornkeyboards/">
+      &commat;acornkeyboards</a></p>
+    <p>Out-of-Stock images generated using:&nbsp;<a href="https://dog.ceo/dog-api/">Dog API &copy; 2023</a></p>
+    <p>Keyboard images from:&nbsp;<a href="https://kbdfans.com/">KDB Fans &copy; 2023</a></p>
+  </footer>
+</body>
+</html>

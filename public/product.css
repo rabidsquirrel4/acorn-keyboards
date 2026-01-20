@@ -1,0 +1,57 @@
+h1 {
+    font-size: 40px;
+  }
+  
+  #reviews h2 {
+    background-color: #F7F7F2;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  #reviews, #product-info {
+    margin: 20px;
+  }
+  
+  #reviews article, aside {
+    border: 1px solid #899878;
+  }
+  
+  #reviews article {
+    background-color: #F7F7F2;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  #product-info {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  #product-info div, #product-info aside {
+    padding: 20px;
+  }
+  
+  #product-info div {
+    flex-grow: 1;
+  }
+  
+  #product-info img {
+    width: 100%;
+  }
+  
+  aside {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button {
+    max-width: fit-content;
+    font-size: 18px;
+    color: #635233;
+    background-color: #EEC97E;
+    border: 2px solid #A98E59;
+    border-radius: 7%;
+  }

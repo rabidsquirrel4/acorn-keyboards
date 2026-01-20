@@ -1,0 +1,82 @@
+#welcome, #new-products, #all-products {
+  display: flex;
+}
+
+#top-nav {
+  justify-content: flex-end;
+}
+
+#welcome {
+  flex-direction: column;
+  justify-content: center;
+  width: inherit;
+  height: 400px;
+  color: white;
+  background-color: black;
+  background-image: url("imgs/odin_75_720x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#welcome-text {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+#new-products, #all-products {
+  justify-content: space-around;
+  text-align: center;
+}
+
+#all-products {
+  background-color: #758C74;
+}
+
+#new-products article, #new-products,
+#all-products article, #all-products {
+  flex-wrap: wrap;
+  padding: 2px 20px 2px 20px;
+}
+
+#new-products article, #all-products article {
+  align-items: center;
+  margin: 10px;
+}
+
+#new-products article {
+  /* border: 1px solid #222725; */
+  background-color: #222725;
+  color: white;
+}
+
+#all-products article {
+  /* border: 1px solid #222725; */
+  background-color: white;
+}
+
+#new-products article > img, #new-products article > p,
+#all-products article > img, #all-products article > p {
+  flex-wrap: nowrap;
+  width: 200px;
+}
+
+#new-products article > img, 
+#all-products article > img {
+  border-radius: 15%;
+  height: 200px;
+}
+
+#all-products-section h2 {
+  color: white;
+  background-color: #4C5A4D;
+}
+
+h3 {
+  max-width: 200px;
+}

@@ -1,0 +1,31 @@
+/*
+    Name: Rachel Shi
+    CS 132 Spring 2023
+    Date: May 6th, 2023
+    Additional css file for the login page of my website, called Acorn, that sells keyboard 
+    accessories, 3D prints, and other knicknacks.
+    Sources: 
+      Inspired by Koala Case Study: 
+      https://eipsum.github.io/cs132/lectures/case-studies/koala-case-study/koala.html
+      Inspired by Coffee Shop Case Study:
+      https://eipsum.github.io/cs132/lectures/lec05-css-iii-more-layout/code/coffee-shop-solution/index.html
+*/
+main, form {
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form li {
+  list-style-type: none;
+  margin: 5px;
+}
+
+button {
+  width: 100px;
+  margin: 10px;
+}

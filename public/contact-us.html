@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+    Name: Rachel Shi
+    CS 132 Spring 2023
+    Date: June 3rd, 2023
+    This is the index.html page for my website, called Acorn, that sells keyboard accessories, 
+    3D prints, and other knicknacks. Although for now, it sells pictures of dogs. I wanted 
+    to auto generate squirrel photos from a squirrel API, but sadly I could not find one.
+    I am hoping to build a squirrel API in the future.
+    It will include links to stuff that is on sale and projects I am undertaking.
+    Sources: 
+      Inspired by Koala Case Study: 
+      https://eipsum.github.io/cs132/lectures/case-studies/koala-case-study/koala.html
+      Inspired by Coffee Shop Case Study:
+      https://eipsum.github.io/cs132/lectures/lec05-css-iii-more-layout/code/coffee-shop-solution/index.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="forms.css">
+  <link rel="stylesheet" href="contact-us.css">
+  <!-- Regular and Bold Roboto Mono Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Regular and Bold Roboto Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Favicon for tab/title area -->
+  <link rel="icon" href="./imgs/acorn-logo-2.png">
+  <!-- Scripts -->
+  <script src="utils.js"></script>
+  <script defer src="contact-us.js"></script>
+  <title>Acorn</title>
+</head>
+<body>
+  <header>
+    <nav id="top-nav">
+      <div>
+          <a href="./index.html">back to homepage</a>
+      </div>
+      <div>
+          <a href="./login.html">login</a>
+          <a href="./cart.html">cart</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact Us Form</h1>
+    <form id="contact-form">
+      <ul>
+        <li>
+          <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input id="name" type="text" name="name" required minlength="1" maxlength="80">
+        </li>
+        <li>
+          <label for="email">Email:&nbsp;&nbsp;&nbsp;</label>
+          <input id="email" type="email" name="email" required>
+        </li>
+        <li id="area">
+          <label for="message">Message:&nbsp;</label>
+          <textarea id="message" type="text" name="msg" required></textarea>
+        </li>
+      </ul>
+      <button id="contact-btn" type="submit">Submit Form</button>
+    </form>
+    <p id="results"></p>
+  </main>
+  <footer>
+    <a href="./contact-us.html">Contact Us</a>
+    <p>Instagram Page:&nbsp;<a href="https://www.instagram.com/acornkeyboards/">
+      &commat;acornkeyboards</a></p>
+    <p>Out-of-Stock images generated using:&nbsp;<a href="https://dog.ceo/dog-api/">Dog API &copy; 2023</a></p>
+    <p>Keyboard images from:&nbsp;<a href="https://kbdfans.com/">KDB Fans &copy; 2023</a></p>
+  </footer>
+</body>
+</html>

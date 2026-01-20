@@ -1,0 +1,23 @@
+#area {
+  flex-grow: 1; 
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+}
+
+form li {
+  display: flex;
+  margin: 5px;
+}
+
+form {
+  height: 50%;
+}
+
+input, textarea {
+  min-width: 250px;
+}

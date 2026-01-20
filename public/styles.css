@@ -1,0 +1,137 @@
+/*
+    Name: Rachel Shi
+    CS 132 Spring 2023
+    Date: May 6th, 2023
+    This is the styles.css file for my website, called Acorn, that sells keyboard accessories, 3D 
+    prints, and other knicknacks.
+    It is used by all pages of my website to give the site a consistent look and feel.
+    Sources: 
+      Inspired by Koala Case Study: 
+      https://eipsum.github.io/cs132/lectures/case-studies/koala-case-study/koala.html
+      Inspired by Coffee Shop Case Study:
+      https://eipsum.github.io/cs132/lectures/lec05-css-iii-more-layout/code/coffee-shop-solution/index.html
+*/
+
+body, main, nav ul, nav a,
+section article, 
+footer p, footer a, 
+article > img, article > p,
+#top-nav,
+#top-nav > div, h3 {
+  display: flex;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+body {
+  background-color: #F7F7F2;
+}
+
+h2 {
+  margin: 0;
+  padding: 15px 0 15px 0;
+  background-color: #E4E6C3;
+}
+
+body, main, 
+section article {
+  flex-direction: column;
+}
+
+ul, body {
+  margin: 0px;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+nav {
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+
+section {
+  text-align: center;
+}
+
+header nav{
+  padding: 5px;
+}
+
+header nav {
+  background-color: #899878;
+}
+
+footer p, footer a {
+  justify-content: center;
+}
+
+footer {
+  padding: 10px 0 0 0;
+}
+
+button {
+  margin: 10px;
+}
+
+p {
+  font-size:1em;
+}
+
+nav li {
+  list-style-type: none;
+  font-size: 1.2em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 20px
+}
+
+footer a:visited{
+  color:#E4E6C3;
+}
+
+ul {
+  justify-content: space-evenly;
+}
+
+nav ul, h3 {
+  flex-wrap: wrap;
+}
+
+nav a {
+  align-items: center;
+}
+
+#top-nav, footer {
+  background-color: #222725;
+}
+
+#top-nav {
+  justify-content: space-between;
+}
+
+#top-nav a {
+  margin-left: 5px;
+} 
+
+#nav-bar-logo {
+  height: 1.0em;
+}
+
+.hidden {
+  display: none;
+}
